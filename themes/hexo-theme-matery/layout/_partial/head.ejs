@@ -71,7 +71,6 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
     <%- partial('_partial/google-analytics') %>
     <title><%= pageTitle %></title>
     <link rel="icon" type="<%= iconType %>" href="<%- theme.jsDelivr.url %><%- url_for(theme.favicon) %>">
@@ -80,4 +79,7 @@
     <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.jquery) %>"></script>
 
     <link rel="stylesheet" href="/js/prism/prism.css">
+    <meta name="referrer" content="no-referrer">
+
+
 </head>
