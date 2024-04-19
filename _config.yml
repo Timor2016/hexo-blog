@@ -130,15 +130,15 @@ feed:
 ## Docs: https://hexo.io/docs/one-command-deployment
 
 
-#deploy:
-#  type: 'git'
-#  repo: git@gitee.com:wc2017/wc2017.git
-#  branch: master
-
-
 deploy:
   type: 'git'
-  repo: git@github.com:Timor2016/Timor2016.github.io.git
-  branch: main
+  repo: git@gitee.com:wc2017/wc2017.git
+  branch: master
+
+
+#deploy:
+  #  type: 'git'
+  # repo: git@github.com:Timor2016/Timor2016.github.io.git
+  # branch: main
 
 
