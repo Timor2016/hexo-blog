@@ -9,8 +9,6 @@ tags:
   - gitee
 ---
 
-
-
 ## 破解安装Typora
 
 请看[Typora 1.8.10.0 破解方法](https://blog.chaochaoke.top/2024/04/17/TyporaCracking/)
