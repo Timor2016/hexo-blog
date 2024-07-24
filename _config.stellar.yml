@@ -1,0 +1,14 @@
+footer:
+  social:
+    github:
+      icon: '<img src="/assets/placeholder/social/08a41b181ce68.svg"/>'
+      url: https://www.baidu.com
+    music:
+      icon: '<img src="/assets/placeholder/social/3845874.svg"/>'
+      url: https://www.baidu.com
+    unsplash:
+      icon: '<img src="/assets/placeholder/social/3616429.svg"/>'
+      url: https://www.baidu.com
+    comments:
+      icon: '<img src="/assets/placeholder/social/942ebbf1a4b91.svg"/>'
+      url: https://www.baidu.com

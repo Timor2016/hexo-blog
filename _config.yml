@@ -3,16 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 超超客
-subtitle: '永远相信美好的事情即将发生'
+title: 洋葱VS土豆
+subtitle: '一入IT深似海|从此红尘是路人'
 description: '一入IT深似海，从此红尘是路人'
-keywords: [Android, Java, Kotlin, Jetpack, linux等]
+keywords: [ Android, Java, Kotlin, Jetpack, linux等 ]
 author: 超超
 language: zh-CN
 timezone: ''
 # 这是主题配置文件的相关信息 # 配置网站favicon和网站LOGO # 此处我用的CDN，也可以使用本地文件
+# 您的网站icon
 favicon: https://cdn.jsdelivr.net/gh/guixinchn/image/blog/favicon.png
-logo: https://cdn.jsdelivr.net/gh/guixinchn/image/blog/logo.png
+avatar: https://gitee.com/wc2017/blog-img/raw/master/20240724/163309854-touxiang-ee038.jpeg
+#logo: https://cdn.jsdelivr.net/gh/guixinchn/image/blog/logo.png
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -105,7 +107,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: hexo-theme-matery
+theme: hexo-theme-stellar
 
 
 # 代码高亮配置
@@ -136,7 +138,7 @@ deploy:
   branch: master
 
 
-#deploy:
+  #deploy:
   #  type: 'git'
   # repo: git@github.com:Timor2016/Timor2016.github.io.git
   # branch: main
