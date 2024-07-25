@@ -107,7 +107,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: hexo-theme-stellar
+theme: stellar
 
 
 # 代码高亮配置
