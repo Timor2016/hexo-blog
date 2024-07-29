@@ -95,10 +95,16 @@ footer:
   # 主题用户越多，开发者维护和更新的积极性就越高，如果您喜欢本主题，请在适当的位置显示主题信息和仓库链接以表支持。
 
 
+# 文章
 article:
   share: [ wechat, weibo, email, link ]
+  auto_cover: false # search from https://source.unsplash.com/
+  related_posts:
+    enable: true
+    max_count: 5
 
 
+# 样式
 style:
   text-align: justify
   smooth_scroll: false
@@ -111,3 +117,28 @@ style:
     body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: '"LXGW WenKai Screen", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+
+# 评论
+
+######## Comments ########
+comments:
+  service: giscus
+  comment_title: 快来参与讨论吧~
+  lazyload: true # true / false
+  # beaudar
+  # https://beaudar.lipk.org/
+  giscus:
+    src: https://giscus.app/client.js
+    data-repo: Timor2016/gid-commen # [在此输入仓库]
+    data-repo-id: R_kgDOMcegSA # [在此输入仓库 ID]
+    data-category: Announcements # [在此输入分类名]
+    data-category-id: DIC_kwDOMcegSM4ChQAg
+    data-mapping: pathname
+    data-strict: 0
+    data-reactions-enabled: 1
+    data-emit-metadata: 0
+    data-input-position: top # top, bottom
+    data-theme: preferred_color_scheme
+    data-lang: zh-CN
+    data-loading: "lazy" # lazy
+    crossorigin: anonymous
