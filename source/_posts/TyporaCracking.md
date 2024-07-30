@@ -5,7 +5,7 @@ img: http://imgstore.chaochaoke.top/cover.png
 summary: 自认为 Typora 是最好用的 Markdown 编辑器，没有之一，本文提供了 Typora 的破解方法之一，亲测可用，如果大家有能力还是建议支持正版。
 categories: 破解
 tags:
- - Typora
+ - typora
  - Markdow
 ---
   

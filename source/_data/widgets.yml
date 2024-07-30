@@ -1,0 +1,20 @@
+aboutme:
+  layout: markdown
+  title: welcome：
+  linklist: # 与 linklist 组件写法相同
+    columns: 1
+    items:
+      - icon: solar:notebook-bookmark-bold-duotone
+        title: 关于我
+        url: https://xaoxuu.com/wiki/stellar/#start
+  content:
+    <p></p>
+    <center>不登高山</center>
+    
+    <center>不知天之高也</center>
+    
+    <center>不临深溪</center>
+    
+    <center>不知地之厚也</center>
+    <p></p>
+  src: # 可以设置外部 md 文件链接

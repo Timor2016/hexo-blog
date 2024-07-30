@@ -24,6 +24,26 @@ menubar:
       title: 记录
       url: /record/
 
+# 每个类型自己的配置
+site_tree:
+  home:
+    leftbar: aboutme, recent
+  index_wiki:
+    leftbar: welcome, recent
+  index_chitchat:
+    menu_id: chitchat
+    nav_tabs: 近期发布
+    leftbar: welcome, recent
+    sidebar: starter, welcome, recent
+  index_record:
+    menu_id: record
+    leftbar: welcome, recent
+    sidebar: starter, welcome, recent
+  record:
+    menu_id: record
+    leftbar: welcome, recent
+    sidebar: starter, welcome, recent
+
 
 
 
@@ -44,17 +64,7 @@ inject:
     - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" media="all" />
 
 
-# 每个类型自己的配置
-site_tree:
-  home:
-    leftbar: welcome, recent
-    sidebar: starter, welcome, recent
-  index_blog:
-    sidebar: starter, welcome, recent
-  index_topic:
-    menu_id: topic
-  topic:
-    menu_id: topic
+
 
 # footer 配置
 ######## Footer ########
