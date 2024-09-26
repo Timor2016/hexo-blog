@@ -1,10 +1,11 @@
 # 基础配置
+# 头像、名称、描述
 logo:
-  avatar: '[{config.avatar}](/about/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
-  title: '[{config.title}](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  avatar: '[{config.avatar}](/about/)' # 头像 后面是跳转链接'
+  title: '[{config.title}](/)' #名称'
   subtitle: '{config.subtitle}' # '文字1 | 文字2' (鼠标放上去会切换到文字2)
 
-# 分类配置
+# 分类配置： 博客、wiki、杂谈、关于
 menubar:
   items:
     - id: post
@@ -21,28 +22,41 @@ menubar:
       url: /chitchat/
     - id: record
       theme: '#F44336'
-      title: 记录
+      title: 关于
       url: /record/
 
 # 每个类型自己的配置
 site_tree:
+  # -- 列表类页面 -- #
+  # 主页配置
   home:
-    leftbar: aboutme, recent
-  index_wiki:
     leftbar: welcome, recent
-  index_chitchat:
-    menu_id: chitchat
-    nav_tabs: 近期发布
-    leftbar: welcome, recent
-    sidebar: starter, welcome, recent
-  index_record:
-    menu_id: record
-    leftbar: welcome, recent
-    sidebar: starter, welcome, recent
-  record:
-    menu_id: record
-    leftbar: welcome, recent
-    sidebar: starter, welcome, recent
+    rightbar: welcome
+  # 博客列表页配置
+  index_blog:
+    base_dir: blog # 只影响自动生成的页面路径
+    menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
+    leftbar: welcome # for categories/tags/archives
+    rightbar:
+    nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
+      '朋友': /friends/rss/
+
+#  home:
+#    leftbar: aboutme, recent
+#  index_wiki:
+#    leftbar: welcome, recent
+#  index_chitchat:
+#    menu_id: chitchat
+#    leftbar: welcome, recent
+#    sidebar: starter, welcome, recent
+#  index_record:
+#    menu_id: record
+#    leftbar: welcome, recent
+#    sidebar: starter, welcome, recent
+#  record:
+#    menu_id: record
+#    leftbar: welcome, recent
+#    sidebar: starter, welcome, recent
 
 
 
@@ -116,6 +130,7 @@ article:
 
 # 样式
 style:
+  prefers_theme: auto # auto / light / dark
   text-align: justify
   smooth_scroll: false
   codeblock:
@@ -130,25 +145,71 @@ style:
 
 # 评论
 
-######## Comments ########
+######## Comments  giscus ########
+#comments:
+#  service: giscus
+#  comment_title: 快来参与讨论吧~
+#  lazyload: true # true / false
+#  # beaudar
+#  # https://beaudar.lipk.org/
+#  giscus:
+#    src: https://giscus.app/client.js
+#    data-repo: Timor2016/gid-commen # [在此输入仓库]
+#    data-repo-id: R_kgDOMcegSA # [在此输入仓库 ID]
+#    data-category: Announcements # [在此输入分类名]
+#    data-category-id: DIC_kwDOMcegSM4ChQAg
+#    data-mapping: pathname
+#    data-strict: 0
+#    data-reactions-enabled: 1
+#    data-emit-metadata: 0
+#    data-input-position: top # top, bottom
+#    data-theme: preferred_color_scheme
+#    data-lang: zh-CN
+#    data-loading: "lazy" # lazy
+#    crossorigin: anonymous
+
 comments:
-  service: giscus
+  service: waline
   comment_title: 快来参与讨论吧~
-  lazyload: true # true / false
-  # beaudar
-  # https://beaudar.lipk.org/
-  giscus:
-    src: https://giscus.app/client.js
-    data-repo: Timor2016/gid-commen # [在此输入仓库]
-    data-repo-id: R_kgDOMcegSA # [在此输入仓库 ID]
-    data-category: Announcements # [在此输入分类名]
-    data-category-id: DIC_kwDOMcegSM4ChQAg
-    data-mapping: pathname
-    data-strict: 0
-    data-reactions-enabled: 1
-    data-emit-metadata: 0
-    data-input-position: top # top, bottom
-    data-theme: preferred_color_scheme
-    data-lang: zh-CN
-    data-loading: "lazy" # lazy
-    crossorigin: anonymous
+  waline:
+    js: /js/waline.js # https://gcore.jsdelivr.net/npm/@waline/client@3.1.3/dist/waline.js
+    css: /css/waline.css # https://gcore.jsdelivr.net/npm/@waline/client@3.1.3/dist/waline.css
+    meta_css: /css/waline-meta.css # https://gcore.jsdelivr.net/npm/@waline/client@3.1.3/dist/waline-meta.css
+    # Waline server address url, you should set this to your own link
+    serverURL: https://blogcommentwaline.vercel.app
+    # If false, comment count will only be displayed in post page, not in home page
+    commentCount: true
+    # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+    pageview: false
+    dark: 'auto'
+      # Custom emoji
+      # emoji:
+      #   - https://unpkg.com/@waline/emojis@1.1.0/weibo
+      #   - https://unpkg.com/@waline/emojis@1.1.0/alus
+      #   - https://unpkg.com/@waline/emojis@1.1.0/bilibili
+      #   - https://unpkg.com/@waline/emojis@1.1.0/qq
+      #   - https://unpkg.com/@waline/emojis@1.1.0/tieba
+      #   - https://unpkg.com/@waline/emojis@1.1.0/tw-emoji
+      #   - https://unpkg.com/@waline/emojis@1.1.0/bmoji
+      # 设置自己的图床服务，替换默认的 Base 64 编码嵌入（有体积大小限制），在评论中上传图片更加方便
+      # imageUploader:
+      # 适配了兰空图床V1、V2版本
+      # 以兰空图床V1为例，下列填写内容为：
+      # fileName: file
+      # tokenName: Authorization
+      # api: https://xxxxxx/api/v1/upload
+      # token: Bearer xxxxxxxxxxxxxx
+      # resp: data.links.url
+      # 以兰空图床V2为例，下列填写内容为：
+      # fileName: image
+      # tokenName: token
+    # api: https://xxxxxx/api/upload
+    # token: xxxxxxxxxxxxxx
+    # resp: data.url
+    #   fileName: # 根据版本二选一
+    #   tokenName: # 根据版本二选一
+    #   api: # 图床 api 地址
+    #   token: # 图床验证
+    #   resp: # 图片地址返回值的字段
+    copyright: false
+    lang: zh-CN
