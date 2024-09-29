@@ -38,8 +38,6 @@ site_tree:
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: welcome # for categories/tags/archives
     rightbar:
-    nav_tabs: # 近期发布 分类 标签 专栏 归档 and ...
-      '朋友': /friends/rss/
 
 #  home:
 #    leftbar: aboutme, recent
@@ -168,6 +166,15 @@ style:
 #    data-loading: "lazy" # lazy
 #    crossorigin: anonymous
 
+
+
+tag_plugins:
+  # {% image %}
+  image:
+    fancybox: false
+
+
+# 评论
 comments:
   service: waline
   comment_title: 快来参与讨论吧~
@@ -180,8 +187,8 @@ comments:
     # If false, comment count will only be displayed in post page, not in home page
     commentCount: true
     # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
-    pageview: false
-    dark: 'auto'
+    pageview: true
+    dark: 'html[data-theme="dark"]'
       # Custom emoji
       # emoji:
       #   - https://unpkg.com/@waline/emojis@1.1.0/weibo

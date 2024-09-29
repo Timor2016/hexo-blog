@@ -1,7 +1,9 @@
 ---
-layout: "chitchat"
+layout: page
 menu_id: chitchat
 breadcrumb: false
-type: "chitchat"
+comments: false
 ---
-{% navbar [知识](/) [杂思](/wiki/) [记录](#comments) [GitHub](https://github.com/xaoxuu/) %}
+{% navbar active:/chitchat/ [知识](/chitchat/) [杂思](/chitchat/think/) [记录](/chitchat/record/) %}
+
+{% toc wiki:chitchat [open:true] [display:mobile] title %}
