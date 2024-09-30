@@ -1,7 +1,10 @@
 ---
-title: 关于本博客
-date: 2024-07-29 15:44:00
+layout: page
+menu_id: about
+breadcrumb: false
+comments: false
 ---
+{% navbar active:/chitchat/ [知识](/chitchat/) [杂思](/chitchat/think/) [记录](/chitchat/record/) %}
 
 # 故事背景
 符文之地经过多年的混战后迎来了久违的和平。在这段时间里，附文之地的科技也得到了极速的发展，尤其是互联网行业，产生了一大批优秀企业，作为曾经的一名优秀的侦察兵首领，也逐渐失去了原本的作用。为了养家糊口也决定转行了。在经过多兄弟们推荐以及深思熟虑后，决定进入互联网行业成为一名优秀的Android从业者。

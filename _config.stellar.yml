@@ -20,10 +20,10 @@ menubar:
       theme: '#FA6400'
       title: 杂谈
       url: /chitchat/
-    - id: record
+    - id: about
       theme: '#F44336'
       title: 关于
-      url: /record/
+      url: /about/
 
 # 每个类型自己的配置
 site_tree:
@@ -93,7 +93,7 @@ footer:
       url: /
     comments:
       icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/942ebbf1a4b91.svg"/>'
-      url: /about/#comments
+      url: /
     theme:
       icon: default:theme
       onclick: 'switchTheme()'
@@ -125,6 +125,15 @@ article:
     enable: true
     max_count: 5
 
+# 文章搜索
+search:
+  service: local_search # local_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+    codeblock: true # 是否搜索代码块（需要content: true)
+
 
 # 样式
 style:
@@ -140,6 +149,12 @@ style:
     body: '"LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Segoe UI", -apple-system, Roboto, Ubuntu, "Helvetica Neue", Arial, "WenQuanYi Micro Hei", sans-serif'
     code: '"LXGW WenKai Screen", Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
     codeblock: 'Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif'
+  leftbar:
+    # 可以设置：纯色/渐变色/图片作为背景
+    # background: var(--leftbar-bg)
+    background-image: url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.13/image/sidebar-bg1@small.jpg)
+    blur-px: 100px
+    blur-bg: var(--alpha60)
 
 # 评论
 
