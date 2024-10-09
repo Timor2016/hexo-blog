@@ -18,11 +18,11 @@ menubar:
       url: /wiki/
     - id: chitchat
       theme: '#FA6400'
-      title: 杂谈
+      title: 动态
       url: /chitchat/
     - id: about
       theme: '#F44336'
-      title: 关于
+      title: 更多
       url: /about/
 
 # 每个类型自己的配置

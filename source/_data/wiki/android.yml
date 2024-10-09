@@ -1,26 +1,27 @@
 name: Android
-title: 提莫学Android
+title: Android 入门
 subtitle: '我去前面探探路 | 要迅捷！'
 tags: Android
-icon: https://gitee.com/wc2017/blog-img/raw/master/20240925/173052010-timor_hand-ab32c.png
-cover: https://gitee.com/wc2017/blog-img/raw/master/20240725/143850963-image-20240725143845364-e7c86.png
-coverpage: true
-description: Stellar 是一个内置文档系统的简约商务风 Hexo 主题，支持丰富的标签和动态数据组件。
-repo: xaoxuu/hexo-theme-stellar
-search:
+icon: https://gitee.com/wc2017/blog-img/raw/master/20240925/173052010-timor_hand-ab32c.png  # 列表图标
+cover: https://gitee.com/wc2017/blog-img/raw/master/20240725/143850963-image-20240725143845364-e7c86.png # 封面图标
+coverpage: true #是否显示全屏封面
+description: 本系列是Android的入门篇，其包括了布局(layout)，活动(Activity)，服务(Service)，通知(Notification)等基础
+search:  # 搜素范围
   filter: /wiki/android/
   placeholder: 在 Android 中搜索...
 leftbar:
   - tree
   - timeline_stellar_releases
   - related
-comment_title: '评论区仅供交流，有问题请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues) 反馈。'
-comments:
-  service: giscus
-  giscus:
-    data-repo: Timor2016/gid-commen
-    data-mapping: pathname
-    data-term: 226
+comment_id: 10000
+ #评论提示  comment_title:  '评论区仅供交流，有问题请提 [issue](https://github.com/xaoxuu/hexo-theme-stellar/issues) 反馈。'
+#comments:
+#  service: giscus
+#  giscus:
+#    data-repo: Timor2016/gid-commen
+#    data-mapping: pathname
+#    data-term: 226
+
 base_dir: /wiki/android/
 tree:
   '快速开始':

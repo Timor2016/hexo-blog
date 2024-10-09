@@ -4,14 +4,11 @@ menu_id: about
 breadcrumb: false
 comments: false
 ---
-{% navbar active:/chitchat/ [知识](/chitchat/) [杂思](/chitchat/think/) [记录](/chitchat/record/) %}
+{% navbar active:/chitchat/ [订阅](/chitchat/) [](/chitchat/think/) [记录](/chitchat/record/) %}
 
-# 故事背景
-符文之地经过多年的混战后迎来了久违的和平。在这段时间里，附文之地的科技也得到了极速的发展，尤其是互联网行业，产生了一大批优秀企业，作为曾经的一名优秀的侦察兵首领，也逐渐失去了原本的作用。为了养家糊口也决定转行了。在经过多兄弟们推荐以及深思熟虑后，决定进入互联网行业成为一名优秀的Android从业者。
 
-经过一段时间的学习后，也掌握了不少知识。但是随着学的越多，忘的越多的魔咒的出现。提莫慢慢开始焦虑了起来，最后在暗恋女友小炮的建议下，决定开始整理自己所学的东西并记录。在网上一顿搜索下看到大家都极力推荐使用`hexo`搭建自己的博客。于是决定使用hexo+hexo-theme-stellar+Vercel 搭建自己的博客系统发布到网上，供互相学习。
 
-首先博客分为博客、wiki、日常、关于这几个大类
+
 
 ### 博客
 
