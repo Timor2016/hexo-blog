@@ -1,12 +1,12 @@
 ---
 title: typora+picgo+gitee 搭建免费图床
-date: 2024-07-01 22:28:13
-#img: http://imgstore.chaochaoke.top/cover.png
 categories: picgo
 tags:
   - typora
   - picgo
   - gitee
+abbrlink: d7012be7
+date: 2024-07-01 22:28:13
 ---
 
 ## 破解安装Typora

@@ -1,10 +1,10 @@
 ---
 title: NodeJS 多版本切换
-date: 2024-07-01 22:28:13
-#img: http://imgstore.chaochaoke.top/cover.png
 categories: nodejs
 tags:
   - nodejs
+abbrlink: 8a7ba599
+date: 2024-07-01 22:28:13
 ---
 
 在项目开发中，不同的项目我们可能需要用到不同版本的node做支持，并且需要根据项目需要切换，以下就是常用的node版本切换命令行。

@@ -19,7 +19,7 @@ avatar: https://gitee.com/wc2017/blog-img/raw/master/20240724/163309854-touxiang
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blog.chaochaoke.top/
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -130,6 +130,22 @@ feed:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+
+
+# abbrlink 配置
+abbrlink:
+  alg: crc32      #算法，支持crc16(default)和crc32
+  rep: hex        #进制，支持dec(default)和hex
+  drafts: false   #true：对草稿也进行处理，false：不处理草稿。默认为false
+  # 从目录树生成类别
+  # depth: 您想生成的目录树的最大深度, 需要大于0
+  auto_category:
+    enable: true  #默认为 true
+    depth:        #默认为 3
+    over_write: false
+  auto_title: false #启用自动标题，它可以按路径自动填充标题
+  auto_date: false #启用自动日期，可以按今天的时间自动填写日期
+  force: false #启用Force模式，在这种模式下插件将忽略缓存，并为每一篇文章计算生成永久链接，即使它已经有了永久链接。这个设置只会更新永久链接，而不是更新其他前置变量。
 
 
 deploy:

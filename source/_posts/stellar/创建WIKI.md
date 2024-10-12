@@ -1,10 +1,11 @@
 ---
-# 博客题目
 title: 创建自己的WIKI
-# 博客写作日期
-date: 2024-10-11
 categories: stellar
-tag: [hexo,wiki]
+tag:
+  - hexo
+  - wiki
+abbrlink: 12d49318
+date: 2024-10-11 00:00:00
 ---
 
 `Stellar`拥有`wiki`系统，我们可以使用它构建自己的知识体系。下面来说说如何在`Staller`主题下搭建`Wiki`。

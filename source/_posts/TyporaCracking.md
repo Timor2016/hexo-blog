@@ -1,12 +1,13 @@
 ---
 title: Typora 1.8.10.0 破解方法
-date: 2024-04-17 22:28:13
-img: http://imgstore.chaochaoke.top/cover.png
+img: 'http://imgstore.chaochaoke.top/cover.png'
 summary: 自认为 Typora 是最好用的 Markdown 编辑器，没有之一，本文提供了 Typora 的破解方法之一，亲测可用，如果大家有能力还是建议支持正版。
 categories: 破解
 tags:
- - typora
- - Markdow
+  - typora
+  - Markdow
+abbrlink: 750c59b3
+date: 2024-04-17 22:28:13
 ---
   
 # 支持正版
