@@ -12,7 +12,7 @@ tag: [hexo,wiki]
 `Stellar` 的Wiki 文档系统，可以自动找到一个项目的所有文档分页，生成一个目录树，还可以手动指定顺序、标题、分组，而非依赖文件路径、文件名来排序和显示。
 ## 创建步骤
 ### 创建项目描述文件
-在`blog/source/_data/` 文件夹中创建一个`wiki` 文件夹，创建文档系统主题的`yml`文件：
+在`blog/source/_data/` 文件夹中创建一个`wiki`文件夹，创建文档系统主题的`yml`文件：
 ![](https://gitee.com/wc2017/blog-img/raw/master/20241010/170626602-image-20241010170615933-eebad.png)
 `yml`文件中的内容
 
@@ -74,7 +74,7 @@ tree:
 各个的说明很详细了。
 ### 设置布局和项目名称
 创建项目文档的文件夹，并创建`.md`文件,
-![](https://gitee.com/wc2017/blog-img/raw/master/20241010/171856891-image-20241010171852019-39ed6.png)在此文档项目的 `md` 文件的 `front-matter` 部分指定所属的项目 `id` （即上一步创建的文件名 `id.yml`）
+![](https://gitee.com/wc2017/blog-img/raw/master/20241010/171856891-image-20241010171852019-39ed6.png)在此文档项目的`md`文件的`front-matter`部分指定所属的项目`id`（即上一步创建的文件名`id.yml`）
 
 ```
 ---  
@@ -83,7 +83,7 @@ title: 这是分页标题
 ---
 ```
 ### 上架项目
-在 `blog/source/_data/` 文件夹中创建一个 `wiki.yml` 文件，在其中写入需要显示的项目 `id`：
+在`blog/source/_data/`文件夹中创建一个`wiki.yml`文件，在其中写入需要显示的项目`id`：
 
 ```
 - androidUi  
@@ -92,11 +92,11 @@ title: 这是分页标题
 
 ### 项目的Github仓库信息
 在项目的描述文件`.yml`中配置
-设置了 `repo` 值就会在右上角显示项目仓库的相关链接：
+设置了`repo`值就会在右上角显示项目仓库的相关链接：
 ```
 repo: xaoxuu/hexo-theme-stellar
 ```
 ### 在目录树中隐藏某篇文件
-可以在 文章的`.md`文件中设置`front-matter` 中不设置 `title` 标题，或者将 `title` 改为 `seo_title`
+可以在文章的`.md`文件中设置`front-matter`中不设置`title`标题，或者将`title`改为`seo_title`
 
 这样你就拥有了一个自己的文档系统
