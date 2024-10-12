@@ -31,30 +31,13 @@ site_tree:
   # 主页配置
   home:
     leftbar: welcome, recent
-    rightbar: welcome
+    rightbar: memos-du
   # 博客列表页配置
   index_blog:
     base_dir: blog # 只影响自动生成的页面路径
     menu_id: post # 未在 front-matter 中指定 menu_id 时，layout 为 post 的页面默认使用这里配置的 menu_id
     leftbar: welcome # for categories/tags/archives
     rightbar:
-
-#  home:
-#    leftbar: aboutme, recent
-#  index_wiki:
-#    leftbar: welcome, recent
-#  index_chitchat:
-#    menu_id: chitchat
-#    leftbar: welcome, recent
-#    sidebar: starter, welcome, recent
-#  index_record:
-#    menu_id: record
-#    leftbar: welcome, recent
-#    sidebar: starter, welcome, recent
-#  record:
-#    menu_id: record
-#    leftbar: welcome, recent
-#    sidebar: starter, welcome, recent
 
 
 
@@ -74,7 +57,8 @@ inject:
     - <link rel="shortcut icon" href="/assets/xaoxuu/favicon/favicon.ico">
     - <meta name="theme-color" content="#f8f8f8">
     - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" media="all" />
-
+    # 自定义css，静态文件后面加个"?任意内容"，可以在每次更新之后用户自动重新请求，避免用户使用本地缓存
+    - <link rel="stylesheet" href="/css/my.css?10">
 
 
 
@@ -112,11 +96,8 @@ footer:
   #   - '[关于本站](/)'
   #   - '[GitHub](/)'
   content: | # 支持 Markdown 格式
-    本站由 [{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 主题创建。
-    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。
+    ©[{author.name}](/) 使用 [{theme.name} {theme.version}]({theme.tree}) 创建。
     <center>
-       </br>
-       </br>
        <script type="text/javascript">
        function show_runtime() {
            window.setTimeout("show_runtime()", 1000);
@@ -131,7 +112,7 @@ footer:
            c = (b - B) * 60;
            C = Math.floor((b - B) * 60);
            D = Math.floor((c - C) * 60);
-           runtime_span.innerHTML = "⏲️小破站已颠沛流离 " + A + "天|" + B + "时|" + C + "分|" + D + "秒⏲️"
+           runtime_span.innerHTML = "🦉已经流浪了 " + A + "天" + B + "时" + C + "分" + D + "秒🦉"
        }
        show_runtime();
        </script>
@@ -147,6 +128,10 @@ article:
   related_posts:
     enable: true
     max_count: 5
+  # 文章标签 分类颜色
+  category_color:
+    "stellar": "#4CB9E7"
+
 
 # 文章搜索
 search:

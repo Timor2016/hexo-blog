@@ -18,3 +18,11 @@ aboutme:
     <center>不知地之厚也</center>
     <p></p>
   src: # 可以设置外部 md 文件链接
+
+
+memos-du:
+  layout: timeline
+  title: 说说
+  api: https://s.dusays.com/api/v1/memo?creatorId=164
+  type: memos
+  hide: user,footer
