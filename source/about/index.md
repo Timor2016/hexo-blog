@@ -4,7 +4,7 @@ menu_id: about
 breadcrumb: false
 comments: false
 ---
-{% navbar active:/chitchat/ [订阅](/chitchat/) [](/chitchat/think/) [记录](/chitchat/record/) %}
+{% navbar active:/chitchat/ [收藏](/chitchat/) [计划](/chitchat/think/) [关于我](/chitchat/record/) %}
 
 
 
