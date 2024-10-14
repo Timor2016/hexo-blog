@@ -59,12 +59,18 @@ inject:
     - <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" media="all" />
     # 自定义css，静态文件后面加个"?任意内容"，可以在每次更新之后用户自动重新请求，避免用户使用本地缓存
     - <link rel="stylesheet" href="/css/my.css?10">
+    # script
+  script:
+    ## 这两行是 https://v6.51.la/ 的网页统计
+    - <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    - <script>LA.init({id:"3JzVvYsySPZsLKjc",ck:"3JzVvYsySPZsLKjc",autoTrack:true,hashMode:true})</script>
 
 
 
 # footer 配置
 ######## Footer ########
 footer:
+  # footer 加载JS
   social:
     github:
       icon: '<img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/>'
