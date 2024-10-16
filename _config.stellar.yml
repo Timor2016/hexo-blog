@@ -213,6 +213,11 @@ tag_plugins:
   image:
     fancybox: false
 
+# 要抓取的 issues 配置
+issues:
+  repo: Timor2016/friends # 仓库持有者/仓库名（改成自己的）
+  label: active # 筛选具有 active 标签的 issue ，取消此项则会提取所有 open 状态的 issue
+  sort: # updated-desc # 排序，按最近更新，取消此项则按创建时间排序
 
 # 评论
 comments:
@@ -249,7 +254,7 @@ comments:
       # resp: data.links.url
       # 以兰空图床V2为例，下列填写内容为：
       # fileName: image
-      # tokenName: token
+    # tokenName: token
     # api: https://xxxxxx/api/upload
     # token: xxxxxxxxxxxxxx
     # resp: data.url

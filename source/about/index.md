@@ -9,6 +9,11 @@ comments: false
 
 
 
+{% friends api:https://raw.github.xaox.cc/xaoxuu/friends/output/v2/data.json %}
+
+
+
+
 
 ### 博客
 
