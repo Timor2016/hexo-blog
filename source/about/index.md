@@ -9,7 +9,7 @@ comments: false
 
 
 
-{% friends api:https://raw.github.xaox.cc/xaoxuu/friends/output/v2/data.json %}
+{% friends api:https://raw.githubusercontent.com/Timor2016/friends/refs/heads/output/v2/data.json %}
 
 
 
