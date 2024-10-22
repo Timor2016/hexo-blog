@@ -20,10 +20,19 @@ aboutme:
   src: # 可以设置外部 md 文件链接
 
 
-# 说说
+# 博客时间线
+blog-time:
+  layout: timeline
+  title: 说说
+  api: https://memos.xaox.cc/api/v1/memo?creatorId=13
+  type: memos
+  hide: user,footer
+
+
+# 说说 https://memos.xaox.cc/archived
 memos-du:
   layout: timeline
   title: 说说
-  api: https://s.dusays.com/api/v1/memo?creatorId=164
+  api: https://memos.xaox.cc/api/v1/memo?creatorId=13
   type: memos
   hide: user,footer
